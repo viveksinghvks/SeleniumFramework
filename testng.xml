@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <listeners>
+        <listener class-name="utils.SuitListener"/>
+    </listeners>
+    <test thread-count="5" name="Test1">
+        <parameter name = "browser" value = "chrome"/> <!-- Pass browser parameter to test -->
+        <classes>
+            <class name="qa.test.TestCase1"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="Test2">
+        <parameter name = "browser" value = "edge"/> <!-- Pass browser parameter to test -->
+        <classes>
+            <class name="qa.test.TestCase1"/>
+        </classes>
+    </test>
+
+</suite>
